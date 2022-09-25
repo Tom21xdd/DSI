@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Compra Online los mejores productos al mejor precio | Linio Colombia</title>
+    <link rel="icon" href="imagen/icono.png">
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+
+    <link href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.0/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+    <script src="//maxcdn.bootstrapcdn.com/bootstrap/3.3.0/js/bootstrap.min.js"></script>
+    <script src="//code.jquery.com/jquery-1.11.1.min.js"></script>
+    <link rel="stylesheet" href="style/style.css">
+    <script src="js/app.js"></script>
+</head>
+
+<header>
+    <img src="imagen/linio.png" alt="" width="200px">
+</header>
+
+<body>
+    <div class="container">
+        <div class="row">
+            <div class="panel panel-login">
+                <div class="panel-heading">
+                    <div class="row">
+                        <div class="col-xs-6">
+                            <a href="#" class="active" id="login-form-link">INICIAR SESIÓN</a>
+                        </div>
+                        <div class="col-xs-6">
+                            <a href="#" id="register-form-link">CREAR CUENTA</a>
+                        </div>
+                    </div>
+                    <hr>
+                </div>
+                <div class="panel-body">
+                    <div class="row">
+                        <div class="col-lg-12">
+                            <form id="login-form" role="form" action="/HTML-DSI/perfil.html" target="_self">
+                                <div class="form-group">
+                                    <label class="form-label required" for="login_form_email">Email</label>
+                                    <input type="email" name="username" id="username" tabindex="1" class="form-control"
+                                        placeholder="linioshop@gmail.com" value="" required="required">
+                                </div>
+                                <div class="form-group_c">
+                                    <label class="form-label required" for="login_form_password">Contraseña</label>
+                                    <input type="password" name="password" id="Input" tabindex="2" class="form-control"
+                                        required="required">
+                                    <img src="imagen/Show.png" alt="" class="icon" id="Eye">
+                                </div>
+                                <br>
+                                <div class="form-group text-center">
+                                    <a href="https://www.youtube.com/watch?v=3SSxbIi_hJ8&ab_channel=MarcoASolisVEVO"
+                                        tabindex="5" class="forgot-password"><u>Olvidé mi contraseña</u></a>
+                                </div>
+                                <div class="form-group">
+                                    <div class="row">
+                                            <button class="candado">
+                                                <img src="imagen/candado.png" alt="" class="candaado" id="Candado">
+                                                Iniciar sesión segura </button>                           
+                                    </div>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+                <div id="register-form" class="panel-body_2" style="display: none;">
+                    <div class="panel_enter">
+                        <div class="form-group">
+                            <label class="form-label required" for="login_form_nombre">Nombre</label>
+                            <input type="text" name="username" id="username" tabindex="1" class="form-control"
+                                placeholder="Ej: Carlos" value="" required="required" minlength="1">
+                        </div>
+                        <div class="form-group">
+                            <label class="form-label required" for="login_form_apellido">Apellido</label>
+                            <input type="text" name="username" id="username" tabindex="1" class="form-control"
+                                placeholder="Ej: López Martínez" value="" required="required" minlength="1">
+                        </div>
+                        <div class="form-group">
+                            <label class="form-label required" for="login_form_email">Email</label>
+                            <input type="email" name="email" id="email" tabindex="1" class="form-control"
+                                placeholder="Ejemplo: linioshop@gmail.com" value="" required="required">
+                        </div>
+                        <div class="form-group_c">
+                            <label class="form-label required" for="login_form_password">Contraseña</label>
+                            <input type="password" name="password" id="Input_2" tabindex="2" class="form-control"
+                                required="required">
+                            <img src="imagen/Show.png" alt="" class="icon_2" id="Eye_2">
+                        </div>
+                        <div class="form-group">
+                            <label class="form-label required" for="login_form_identification">Cédula</label>
+                            <input type="numeric" name="password" id="password" tabindex="2" class="form-control"
+                                placeholder="" required="required" minlength="6">
+                        </div>
+                    </div>
+                    <hr>
+                    <div class="form-group text-center">
+                        <label for="remember"> <input type="checkbox" tabindex="3" class="" name="remember" id="remember"> Declaro que he leído y autorizo el uso de mis datos personales de acuerdo a la <a href="https://www.linio.com.co/sp/privacidad" target="_blank">Autorización</a> y acepto los <br> <a href="https://www.linio.com.co/sp/terminos" target="_blank">Términos y Condiciones</a> de Linio.</label>
+                    </div>
+                    <div class="form-group text-center">
+                        <label for="remember"> <input type="checkbox" tabindex="3" class="" name="remember" id="remember"> Quiero acumular los puntos de mis compras, inscribiéndome al programa CMR Puntos. Autorizo el <a href="https://assets.ctfassets.net/n8a32dlewwba/6JOtQMchhFrvJonKOa5Ovu/d7f33858d5896507e53724b3e350a367/Cl__usula_de_Autorizaci__n_General_Loyalty_VF_Abr_2021.pdf" target="_blank">Tratamiento <br> de mis Datos Personales</a> y acepto el <a href="https://assets.ctfassets.net/n8a32dlewwba/90w8G6IuZ5KxwY1ba5Q67/0ca8ecf914466bc724b8d003fe0c2492/LOYALTY_-_Reglamento_Programa_CMR_Puntos_Ajustado_V5.pdf" target="_blank">Reglamento del programa</a>.</label>
+                    </div>
+                    <div></div>
+                    <div class="form-group">
+                        <div class="row">
+                            <div class="col-sm-6 col-sm-offset-3">
+                               <a href="/HTML-DSI/perfil.html">
+                                <input type="submit" name="register-submit" id="register-submit" tabindex="4" class="form-control btn btn-register" value="Completar registro">
+                               </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    </div>
+</body>
+
+</html>
