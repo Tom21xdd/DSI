@@ -41,12 +41,13 @@ public class ControladoraAPP {
 	}
     
 
-////    @RequestMapping("/cambioClave")
-////    public String cambioClave(@PathVariable Long documento) {
-////        Persona personaE = servicio.buscar(documento);
-////        personaE.se
-////        return "redirect:/perfil";
-////    }
+    @RequestMapping("/cambioClave")
+    public String cambioClave(@PathVariable Long documento, String contrasenia) {
+        Persona personaE = servicio.buscar(documento);
+        personaE.setContrasenia(contrasenia);
+        servicio.actualizar(personaE);
+        return "redirect:/perfil";
+    }
 
     @PostMapping("/perfil/(documento)")
     public String actualizar_datos(@PathVariable Long documento, @ModelAttribute("persona") Persona persona, Model modelo) {

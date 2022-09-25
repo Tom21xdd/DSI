@@ -1,5 +1,6 @@
 package com.app.web;
 
+import com.app.web.entidad.Persona;
 import com.app.web.repositorio.Repositorio;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.CommandLineRunner;
@@ -11,7 +12,8 @@ public class CrudSpringBootApplication implements CommandLineRunner{
 
 	public static void main(String[] args) {
 		SpringApplication.run(CrudSpringBootApplication.class, args);
-	}
+                
+        }
 
 	@Autowired
 	private Repositorio repositorio;
@@ -25,6 +27,8 @@ public class CrudSpringBootApplication implements CommandLineRunner{
 	    Estudiante estudiante2 = new Estudiante("Andre","Carrillo","andrecar20@gmail.com");
 	    repositorio.save(estudiante2);
 	   */ 
-	}
+            Persona a=new Persona(1l, "Andres", "", "", "123456");
+            repositorio.save(a);
+        }
 
 }
