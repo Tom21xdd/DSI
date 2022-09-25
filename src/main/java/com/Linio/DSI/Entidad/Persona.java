@@ -1,5 +1,6 @@
-
+package com.Linio.Entidad;
 import java.sql.Date;
+
 import javax.persistence.Entity;
 import javax.persistence.*;
 
@@ -18,7 +19,7 @@ import javax.persistence.*;
 public class Persona {
     @Id
     @Column(name="documento", nullable=false)
-    private long documento;
+    private Long documento;
     @Column(name = "nombre", nullable=false, length=100)
     private String nombre;
     
@@ -36,7 +37,7 @@ public class Persona {
         
     }
     
-    public Persona(long documento, String nombre, String apellido, String sexo, Date fechaNacimiento, String email) {
+    public Persona(Long documento, String nombre, String apellido, String sexo, Date fechaNacimiento, String email) {
         this.documento = documento;
         this.nombre = nombre;
         this.apellido = apellido;
@@ -47,11 +48,11 @@ public class Persona {
 
     
     
-    public long getDocumento() {
+    public Long getDocumento() {
         return documento;
     }
 
-    public void setDocumento(long documento) {
+    public void setDocumento(Long documento) {
         this.documento = documento;
     }
 
