@@ -4,7 +4,8 @@
  * and open the template in the editor.
  */
 package com.Linio.DSI.Service;
-import com.Linio.DSI.Entidad.Persona;
+//import com.Linio.DSI.Entidad.Persona;
+import com.Linio.Entidad.Persona;
 /**
  *
  * @author SneiderQuintero

@@ -4,7 +4,7 @@
  * and open the template in the editor.
  */
 package com.Linio.DSI.Service;
-import com.Linio.DSI.Entidad.Persona;
+//import com.Linio.DSI.Entidad.Persona;
 import com.Linio.DSI.repositorio.Repositorio;
 import com.Linio.Entidad.Persona;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -26,7 +26,7 @@ public class Servicio implements ServicioInterfaz{
     }
     @Override
     public Persona buscar(Long documento){
-        return repositorio.findById(documento).get();
+        return (Persona) repositorio.findById(documento).get();
         
     }
     @Override
@@ -40,13 +40,4 @@ public class Servicio implements ServicioInterfaz{
         repositorio.deleteById(documento);
     }
 
-    @Override
-    public Object crear(Object persona) {
-        throw new UnsupportedOperationException("Not supported yet."); // Generated from nbfs://nbhost/SystemFileSystem/Templates/Classes/Code/GeneratedMethodBody
-    }
-
-    @Override
-    public Object actualizar(Object persona) {
-        throw new UnsupportedOperationException("Not supported yet."); // Generated from nbfs://nbhost/SystemFileSystem/Templates/Classes/Code/GeneratedMethodBody
-    }
 }
