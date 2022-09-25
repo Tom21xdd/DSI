@@ -28,25 +28,30 @@ public class Persona {
     
     @Column(name = "sexo", nullable=false, length=20)
     private String sexo;
+    
     @Column(name = "fecha_nacimiento", nullable=false, length=50)
     private String fechaNacimiento;
+    
     @Column(name="correo", nullable=false, length=50,unique=true)
     private String email;
-
+    
+    @Column(name="contrasenia",nullable=false,length = 50)
+    private String contrasenia;
+            
+    
+    
     public Persona(){
         
     }
-    
-    public Persona(Long documento, String nombre, String apellido, String sexo, String fechaNacimiento, String email) {
+
+    public Persona(Long documento, String nombre, String apellido, String email, String contrasenia) {
         this.documento = documento;
         this.nombre = nombre;
         this.apellido = apellido;
-        this.sexo = sexo;
-        this.fechaNacimiento = fechaNacimiento;
         this.email = email;
+        this.contrasenia = contrasenia;
     }
 
-    
     
     public Long getDocumento() {
         return documento;
@@ -95,5 +100,14 @@ public class Persona {
     public void setEmail(String email) {
         this.email = email;
     }
+
+    public String getContrasenia() {
+        return contrasenia;
+    }
+
+    public void setContrasenia(String contrasenia) {
+        this.contrasenia = contrasenia;
+    }
+    
     
 }

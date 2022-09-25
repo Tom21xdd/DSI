@@ -34,9 +34,8 @@ public class Servicio implements ServicioInterfaz{
     @Override
     public Persona actualizar(Persona persona){
         return repositorio.save(persona);
-        
     }
-    
+   
     @Override
     public void eliminar(Long documento){
         repositorio.deleteById(documento);
