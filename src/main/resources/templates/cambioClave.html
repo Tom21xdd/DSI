@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cambiar Contraseña</title>
+    <link rel="stylesheet" href="cambioClave.css">
+    <link rel="icon" href="/icono.png">
+    <script src = " https://unpkg.com/sweetalert/dist/sweetalert.min.js "></script>
+    <script src="/HTML-DSI/vista2/Script.js"></script>
+</head>
+<body>
+    <header class="head">
+        <img src="/HTML-DSI/Logo.png" alt="" class="logo" >
+    </header>
+    <main>
+        <h1>CAMBIAR CONTRASEÑA</h1>
+        <section class="content">
+            <form class="formulario">
+                <label for="actual">
+                    <span>Contraseña Actual</span><br>
+                    <div class="divimg">
+                        <input type="password" id="actual" class="claveactual">
+                        <button type="button" class="ojobut" id="ojo1" onclick="mostrarContrasena('actual')">
+                            <img src="/HTML-DSI/ojo.png" alt="" class="ojo">
+                        </button>
+                    </div>
+                </label>
+                <label for="nueva">
+                    <span>Contraseña Nueva</span><br>
+                    <div class="divimg">
+                        <input type="password" id="nueva" class="clavenueva">
+                        <button type="button" class="ojobut" id="ojo2" onclick="mostrarContrasena('nueva')">
+                            <img src="/HTML-DSI/ojo.png" alt="" class="ojo">
+                        </button>
+                    </div>
+                </label>
+                <label for="confirmar">
+                    <span>Confirma tu nueva contraseña</span><br>
+                    <div class="divimg">
+                        <input type="password" id="confirmar" class="claveconfirmar" >
+                        <button type="button" class="ojobut" onclick="mostrarContrasena('confirmar')"> 
+                            <img src="/HTML-DSI/ojo.png" alt="" class="ojo">
+                        </button>
+                    </div>
+                </label>
+                <button type="button" class="guardar" onclick="alerta()">Guardar Cambios</button>
+            </form>
+        </section>
+    </main>
+</body>
+</html>
