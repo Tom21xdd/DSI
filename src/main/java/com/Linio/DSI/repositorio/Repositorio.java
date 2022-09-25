@@ -7,6 +7,7 @@ package com.Linio.DSI.repositorio;
 import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.stereotype.Repository;
 import com.Linio.DSI.Entidad.Persona;
+import com.Linio.Entidad.Persona;
 /**
  *
  * @SneiderQuintero
