@@ -4,24 +4,19 @@ import org.springframework.web.bind.annotation.GetMapping;
 
 public class ControladoraAPP {
 
-	@GetMapping({ "/", "/login" })
+	@GetMapping({ "/", "/vista login" })
 	public String index() {
-		return "index";
+		return "vista login";
 	}
 
-	@GetMapping("/menu")
-	public String hello() {
-		return "menu";
+	@GetMapping("/vista cambio clave")
+	public String vistaCambioClave() {
+		return "vista cambio clave";
 	}
 
-	@GetMapping("/user")
-	public String user() {
-		return "user";
-	}
-
-	@GetMapping("/admin")
-	public String admin() {
-		return "admin";
+	@GetMapping("/vista perfil")
+	public String vistaPerfil() {
+		return "vista perfil";
 	}
 
 }
